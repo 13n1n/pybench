@@ -15,4 +15,4 @@ RUN cd cpython && make -j6 && make install
 
 ADD bench.py ./
 
-CMD ["/cpython/python", "bench.py"]
+CMD ["/usr/local/bin/python3", "bench.py"]
