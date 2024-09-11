@@ -1,0 +1,35 @@
+services:
+  v3_14:
+    build:
+      context: .
+      args:
+        version: v3.14
+        configure_flags: --enable-optimizations --with-lto
+
+  v3_14_jit:
+    build:
+      context: .
+      args:
+        version: v3.14
+        configure_flags: --enable-optimizations --enable-experimental-jit --with-lto
+
+  v3_14_no_optz:
+    build:
+      context: .
+      args:
+        version: v3.14
+        configure_flags: --with-lto
+
+  v3_14_nogil:
+    build:
+      context: .
+      args:
+        version: v3.14
+        configure_flags: --enable-optimizations --enable-experimental-jit --with-lto --disable-gil
+
+  v3_12:
+    build:
+      context: .
+      args:
+        version: v3.12
+        configure_flags: --enable-optimizations --with-lto
