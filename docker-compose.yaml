@@ -1,6 +1,7 @@
 services:
   v3_14:
     build:
+      network: host
       context: .
       args:
         version: v3.14
@@ -8,6 +9,7 @@ services:
 
   v3_14_jit:
     build:
+      network: host
       context: .
       args:
         version: v3.14
@@ -15,6 +17,7 @@ services:
 
   v3_14_no_optz:
     build:
+      network: host
       context: .
       args:
         version: v3.14
@@ -22,6 +25,7 @@ services:
 
   v3_14_nogil:
     build:
+      network: host
       context: .
       args:
         version: v3.14
@@ -29,6 +33,7 @@ services:
 
   v3_12:
     build:
+      network: host
       context: .
       args:
         version: v3.12
